@@ -573,7 +573,7 @@ body {
     max-width: 1620px;
     max-height: 620px;
     background-repeat: no-repeat;
-    background-image: url("/img/jpg/man.jpg");
+    background-image: url("../img/jpg/man.jpg");
     background-position: 690px 0px;
     margin-top: 51px;
     margin-left: auto;
@@ -763,7 +763,7 @@ body {
     background: #FFB64F;
 
     background-repeat: no-repeat;
-    background-image: url("/img/svg/buble.svg");
+    background-image: url("../img/svg/buble.svg");
     background-position: 307px 11px;
 }
 
@@ -789,7 +789,7 @@ body {
     background: #7CE3E1;
 
     background-repeat: no-repeat;
-    background-image: url("/img/svg/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     background-position: 283px 4px;
 }
 
@@ -813,7 +813,7 @@ body {
     background: #000;
 
     background-repeat: no-repeat;
-    background-image: url("/img/svg/laptop.svg");
+    background-image: url("../img/svg/laptop.svg");
     background-position: 314px 23px;
 }
 
