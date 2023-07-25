@@ -1,0 +1,1093 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* inter-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v12-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* This stylesheet generated by Transfonter (https://transfonter.org) on July 5, 2017 12:20 AM */
+@font-face {
+    font-family: 'Ferry';
+    src: url('../fonts/Ferry-Black.eot');
+    src: local('Ferry Black'), local('Ferry-Black'),
+    url('../fonts/Ferry-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Ferry-Black.woff') format('woff'),
+    url('../fonts/Ferry-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Inter;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+    /*background: #FFF;*/
+    /*background-color: #abe7ab;*/
+}
+
+
+.header {
+    /*background-color: #529ffc;*/
+}
+
+
+/* Header styles start */
+.header__logo {
+    margin-right: 401px;
+}
+
+.header_wrapper {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    /*justify-content: space-between;*/
+}
+
+.header__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 128px;
+    /*background-color: #b3d4fc;*/
+}
+
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 49px;
+}
+
+.header__item:last-child {
+    margin-right: 0px;
+}
+
+.header__link {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-decoration: none;
+}
+
+.header__account_info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 175px;
+    height: 63px;
+    padding: 5px;
+    margin-right: 78px;
+    border-radius: 5px;
+    background: RGB(217, 217, 217, 0.3);
+}
+
+.header__account_info .small {
+    color: RGB(0, 0, 0, 0.5);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.header__account_info .value-bold {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.header__account_info .value-green {
+    color: #8AC540;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.header__account {
+    display: flex;
+    width: 161px;
+    height: 32px;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    background-color: #fff;
+}
+
+.header__account_leftside {
+    width: 127px;
+    height: 32px;
+}
+
+.header__account-name {
+    text-align: right;
+    opacity: 0.699999988079071;
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+.right {
+    text-align: right;
+}
+
+.header__logout {
+    text-decoration: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    opacity: 0.4000000059604645;
+}
+
+
+.header__account_photo {
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Header styles end */
+
+/* First block Intro styles start */
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1620px;
+    max-height: 620px;
+    background-repeat: no-repeat;
+    background-image: url("/img/jpg/man.jpg");
+    background-position: 690px 0px;
+    margin-top: 51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 109px;
+}
+
+
+.left_sidebar {
+    width: 743px;
+    height: 620px;
+}
+
+.left_sidebar .title {
+    width: 743px;
+    height: 288px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: Ferry;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.left_sidebar .description {
+    width: 543px;
+    height: 48px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-bottom: 70px;
+}
+
+.left_sidebar .button__get_data {
+    width: 335px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #5970FF;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.22px;
+}
+
+.intro .image {
+    margin-top: 27px;
+    height: 100%;
+}
+
+/* First block Intro styles end */
+
+/*  Carusel About US styles start */
+
+.about_cards {
+    /*width: 1346px;*/
+    height: 349px;
+    margin-bottom: 70px;
+    /*background-color: #b3d4fc;*/
+}
+
+.block_title {
+    /*width: 743px;*/
+    margin-left: 9px;
+    color: #000;
+    margin-bottom: 60px;
+    font-family: Ferry;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.45px;
+}
+
+.carusel {
+    display: flex;
+    /*max-width: 100%;*/
+    align-items: center;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.carusel .band {
+    display: flex;
+    max-width: 100%;
+    height: 245px;
+    overflow: hidden;
+    margin: 0 auto;
+    /*ustify-content: space-between;*/
+
+}
+
+.band .card {
+    width: 400px;
+    height: 225px;
+    margin-top: 10px;
+    margin-left: 7px;
+    margin-right: 7px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+
+}
+
+.carusel .card:last-child {
+    margin-right: 10px;
+}
+
+.card .card_icon {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    width: 65px;
+    height: 79px;
+    flex-shrink: 0;
+}
+
+.card .card_text {
+    width: 360px;
+    margin-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*  Carusel About US styles end */
+
+
+.picture {
+    width: 1307px;
+    height: 575px;
+    margin-bottom: 107px;
+}
+
+/* Plans block styles start */
+.plans__block {
+    max-width: 1320px;
+    /*height: 664px;*/
+    margin: 0 auto;
+    /*background-color: #b3d4fc;*/
+}
+
+.plans__block-cards {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+    grid-template-rows: auto;
+    max-width: 1320px;
+    /*justify-content: space-between;*/
+}
+
+.plan__card-beginner {
+    width: 415px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFB64F;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    margin-bottom: 0;
+}
+
+.card__header-beginner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 413px;
+    height: 132px;
+    margin-left: -1px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: #FFB64F;
+
+    background-repeat: no-repeat;
+    background-image: url("/img/svg/buble.svg");
+    background-position: 307px 11px;
+}
+
+.plan__card-pro {
+    display: block;
+    width: 415px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 10px;
+
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+
+}
+
+.card__header-pro {
+    display: flex;
+    flex-wrap: wrap;
+    width: 415px;
+    height: 134px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: #7CE3E1;
+
+    background-repeat: no-repeat;
+    background-image: url("/img/svg/arrow.svg");
+    background-position: 283px 4px;
+}
+
+.plan__card-business {
+    display: block;
+    width: 415px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card__header-business {
+    display: flex;
+    flex-wrap: wrap;
+    width: 415px;
+    height: 134px;
+    flex-shrink: 0;
+    border-radius: 10px 10px 0px 0px;
+    background: #000;
+
+    background-repeat: no-repeat;
+    background-image: url("/img/svg/laptop.svg");
+    background-position: 314px 23px;
+}
+
+.card__title {
+    width: 150px;
+    height: 36px;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.card__title-white {
+    width: 150px;
+    height: 36px;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.card_text {
+    height: 22px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+    margin-left: 30px;
+    margin-bottom: 34px;
+}
+
+.card__header-business .card_text {
+    width: 315px;
+    height: 22px;
+    color: white;
+}
+
+.card__priceblock {
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: blueviolet;*/
+}
+
+.card__priceblock_header {
+    display: flex;
+    width: 370px;
+    height: 66px;
+    margin-left: 30px;
+    /*margin-right: 15px;*/
+    /*background-color: #b7aa65;*/
+}
+
+.price_actual {
+    margin-top: 33px;
+    margin-right: 19px;
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.3px;
+}
+
+.price_full {
+    margin-top: 36px;
+    margin-right: 43px;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.25px;
+    text-decoration-line: line-through;
+    opacity: 0.5;
+}
+
+.plan__current_visible {
+    margin-top: 12px;
+    width: 134px;
+    height: 24px;
+    color: #FFF;
+
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #3BA5E0;
+}
+
+.plan__current_hidden {
+    display: none;
+}
+
+.plan_text {
+    margin: 3px 13px;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.plan_description {
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    width: 371px;
+    height: 22px;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.card__planblock {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    width: 355px;
+    height: 110px;
+}
+
+.plan__description_title {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+.galka {
+    margin-right: 8px;
+}
+
+.list__item {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 22px;
+}
+
+.list__item_text {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.18px;
+}
+
+
+.card__button_go {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 18px 40px;
+    width: 355px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #D2D2D2;
+
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+
+    border: none;
+}
+
+.card__button_go:active {
+    background: #b0afaf;
+}
+
+.card__button_details {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 18px 120px;
+    width: 355px;
+    height: 59px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #5970FF;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.card__button_details:active {
+    background: #354ff3;
+}
+
+/* Plans block styles end */
+
+.main {
+    margin-bottom: 118px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    height: 137px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #029491;
+}
+
+.footer .footer__logo {
+    /*margin-right: 995px;*/
+}
+
+.footer .footer_textblock {
+    display: inline-block;
+    width: 199px;
+    height: 51px;
+    padding-top: 25px;
+}
+
+.footer_contacts {
+    margin-bottom: 21px;
+}
+
+.footer_contacts .text_right {
+    display: inline-block;
+    text-align: right;
+    width: 199px;
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.14px;
+}
+
+.footer_textblock .copyright {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
+}

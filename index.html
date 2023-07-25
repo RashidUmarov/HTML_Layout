@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис по поиску публикаций о компании по его ИНН</title>
+    <!--  перезагрузка дефолтных стилей  <link rel="stylesheet" href="./css/reset.css">-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="./img/svg/logo.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+                </a>
+            </div>
+
+            <!-- центральное меню -->
+            <nav class="header__nav-menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">Тарифы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- блок информации по компаниям -->
+            <div class="header__account_info">
+                <p><span class="small">Использовано компаний </span><span class="value-bold">34</span></p>
+                <p><span class="small">Лимит по компаниям </span><span class="value-green">100</span></p>
+            </div>
+
+            <!-- блок профиля -->
+            <div class="header__account">
+                <div class="header__account_leftside">
+                    <div class="header__account-name">Алексей А.</div>
+                    <div class="right"><a href="" class="header__logout">Выйти</a></div>
+                </div>
+                <div class="header__account_photo"><img src="./img/png/photo.png"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <!-- описание сервиса с кнопкой запроса данных -->
+        <section class="intro">
+            <nav class="left_sidebar">
+                <h1 class="title">
+                    сервис по поиску публикаций о компании по его ИНН
+                </h1>
+                <div class="description">
+                    Комплексный анализ публикаций, получение данных в формате PDF на электронную почту.
+                </div>
+
+                <button class="button__get_data">
+                    Запросить данные
+                </button>
+            </nav>
+            <!--                <div class="image">-->
+            <!--                    <img src="./img/jpg/man.jpg" alt="сервис по поиску публикаций о компании по его ИНН">-->
+            <!--                </div>-->
+        </section>
+
+        <!-- карточки с описанием преимуществ -->
+        <section class="about_cards">
+            <div class="block_title">
+                Почему именно мы
+            </div>
+            <div class="carusel">
+                <div class="arrow">
+                    <img src="./img/svg/right.svg" alt="">
+                </div>
+                <div class="band">
+                    <div class="card">
+                        <img src="./img/svg/time.svg" alt="" class="card_icon">
+                        <p class="card_text">
+                            Высокая и оперативная скорость обработки заявки
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/svg/search.svg" alt="" class="card_icon">
+                        <p class="card_text">
+                            Огромная комплексная база данных, обеспечивающая объективный ответ на запрос
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="./img/svg/door_shield.svg" alt="" class="card_icon">
+                        <p class="card_text">
+                            Защита конфеденциальных сведений, не подлежащих разглашению по федеральному
+                            законодательству
+                        </p>
+                    </div>
+                </div>
+                <div class="arrow">
+                    <img src="./img/svg/left.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="picture">
+            <img src="./img/svg/picture.svg" alt="">
+        </section>
+
+        <!-- блок с тарифами в виде карточек-->
+        <section class="plans__block">
+            <div class="block_title">
+                наши тарифы
+            </div>
+            <div class="plans__block-cards">
+                <div class="plan__card-beginner">
+                    <div class="card__header-beginner">
+                        <div class="card__title">Beginner</div>
+                        <div class="card_text">Для небольшого исследования</div>
+                    </div>
+
+                    <div class="card__priceblock">
+                        <div class="card__priceblock_header">
+                            <div class="price_actual">799 ₽</div>
+                            <div class="price_full">1 200 ₽</div>
+                            <div class="plan__current_visible">
+                                <div class="plan_text">Текущий тариф</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan_description">или 150 ₽/мес. при рассрочке на 24 мес.</div>
+
+                    <div class="card__planblock">
+                        <div class="plan__description_title">В тариф входит:</div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Безлимитная история запросов</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Безопасная сделка</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Поддержка 24/7</div>
+                        </div>
+                    </div>
+
+                    <button class="card__button_go">
+                        Перейти в личный кабинет
+                    </button>
+
+                </div>
+
+                <div class="plan__card-pro">
+                    <div class="card__header-pro">
+                        <div class="card__title">Pro</div>
+                        <div class="card_text">Для HR и фрилансеров</div>
+                    </div>
+
+                    <div class="card__priceblock">
+                        <div class="card__priceblock_header">
+                            <div class="price_actual">1 299 ₽</div>
+                            <div class="price_full">2 600 ₽</div>
+                            <div class="plan__current_hidden">
+                                <div class="plan_text">Текущий тариф</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan_description">или 279 ₽/мес. при рассрочке на 24 мес.</div>
+
+                    <div class="card__planblock">
+                        <div class="plan__description_title">В тариф входит:</div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Все пункты тарифа Beginner</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Экспорт истории</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Рекомендации по приоритетам</div>
+                        </div>
+                    </div>
+
+                    <button class="card__button_details">
+                        Подробнее
+                    </button>
+                </div>
+
+
+                <div class="plan__card-business">
+                    <div class="card__header-business">
+                        <div class="card__title-white">Business</div>
+                        <div class="card_text">Для корпоративных клиентов</div>
+                    </div>
+
+                    <div class="card__priceblock">
+                        <div class="card__priceblock_header">
+                            <div class="price_actual">2 379 ₽</div>
+                            <div class="price_full">3 700 ₽</div>
+                            <div class="plan__current_hidden">
+                                <div class="plan_text">Текущий тариф</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan_description"></div>
+
+                    <div class="card__planblock">
+                        <div class="plan__description_title">В тариф входит:</div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Все пункты тарифа Pro</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Безлимитное количество запросов</div>
+                        </div>
+                        <div class="list__item">
+                            <div class="galka"><img src="./img/svg/galka_green.svg" alt=""></div>
+                            <div class="list__item_text">Приоритетная поддержка</div>
+                        </div>
+                    </div>
+
+                    <button class="card__button_details">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div> <!-- wrapper-->
+
+<!-- подвал -->
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="./img/svg/logo_footer.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+    </div>
+
+    <div class="footer_textblock">
+        <div class="footer_contacts">
+            <span class="text_right"> г. Москва, Цветной б-р, 40</span><br>
+            <span class="text_right"> +7 495 771 21 11</span><br>
+            <span class="text_right"> info@skan.ru</span>
+        </div>
+        <div class="copyright">
+            Copyright. 2022
+        </div>
+    </div>
+</footer>
+</body>
+</html>
