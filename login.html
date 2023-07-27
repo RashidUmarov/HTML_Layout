@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис по поиску публикаций о компании по его ИНН</title>
+    <!--  перезагрузка дефолтных стилей  <link rel="stylesheet" href="./css/reset.css">-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="./img/svg/logo.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+                </a>
+            </div>
+
+            <!-- центральное меню -->
+            <nav class="header__nav-menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">Тарифы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- блок информации по компаниям -->
+            <div class="header__account_info">
+                <p><span class="small">Использовано компаний </span><span class="value-bold">34</span></p>
+                <p><span class="small">Лимит по компаниям </span><span class="value-green">100</span></p>
+            </div>
+
+            <!-- блок профиля -->
+            <div class="header__account">
+                <div class="header__account_leftside">
+                    <div class="header__account-name">Алексей А.</div>
+                    <div class="right"><a href="" class="header__logout">Выйти</a></div>
+                </div>
+                <div class="header__account_photo"><img src="./img/png/photo.png"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="main__login">
+        <div class="login__main_leftside">
+            <div class="login__main_title">
+                <h1 class="login_title">Для оформления подписки на тариф, необходимо авторизоваться.</h1>
+            </div>
+            <div class="login__main_picture">
+                <img class="login_picture" src="img/svg/characters.svg" alt="">
+            </div>
+        </div>
+
+        <div class="login__main_rightside">
+            <div class="login__main_inputform">
+                <div class="input__form">
+                    <div class="form__menu">
+                        <div class="form__menu_login">Войти</div>
+                        <div class="form__menu_register">Зарегистрироваться</div>
+                    </div>
+                    <div class="form-group">
+                        <p class="form_control_title">Логин или номер телефона:</p>
+                        <input class="form_control" type="text" name="username" maxlength="15" minlength="4"
+                               pattern="^[a-zA-Z0-9_.-]*$" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <p class="form_control_title">Пароль:</p>
+                        <input class="form_control" type="password" name="password" minlength="6" id="password"
+                               required>
+                    </div>
+
+                    <button class="btn__submit" type="submit">Войти</button>
+                    <div class="restore_pass">Восстановить пароль</div>
+
+                    <div class="form-group_media">
+                        <p class="form_control_title">Войти через:</p>
+                        <div class="social__block">
+                            <div class="network_link"><img src="img/svg/google.svg" alt=""></div>
+                            <div class="network_link"><img src="img/svg/facebook.svg" alt=""></div>
+                            <div class="network_link"><img src="img/svg/yandex.svg" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="zamok__picture">
+                    <img src="img/svg/zamok.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div> <!-- wrapper-->
+
+
+<!-- подвал -->
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="./img/svg/logo_footer.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+    </div>
+
+    <div class="footer_textblock">
+        <div class="footer_contacts">
+            <span class="text_right"> г. Москва, Цветной б-р, 40</span><br>
+            <span class="text_right"> +7 495 771 21 11</span><br>
+            <span class="text_right"> info@skan.ru</span>
+        </div>
+        <div class="copyright">
+            Copyright. 2022
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
