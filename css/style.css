@@ -1186,6 +1186,7 @@ body {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: #029491;
+    cursor: pointer;
 }
 
 .form__menu_register {
@@ -1202,6 +1203,7 @@ body {
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: #C7C7C7;
+    cursor: pointer;
 }
 
 .form_control_title {
@@ -1273,10 +1275,12 @@ body {
     letter-spacing: 0.28px;
     text-decoration-line: underline;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .social__block {
     display: inline-flex;
+    cursor: pointer;
 }
 
 .zamok__picture {
@@ -1285,7 +1289,7 @@ body {
     top: 0px;
 }
 
-.network_link{
+.network_link {
     margin-right: 10px;
 }
 
