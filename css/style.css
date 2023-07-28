@@ -563,6 +563,66 @@ body {
     height: 30px;
 }
 
+.header__rightside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 113px;
+    /*width: 251px;*/
+    height: 26px;
+    flex-shrink: 0;
+    /*background-color: #5970FF;*/
+}
+
+.header__rightside-block {
+    padding: 5px 11px 5px 11px;
+}
+
+.header__rightside-block .active {
+    padding: 4px 11px 6px 11px;
+    color: #000;
+    height: 26px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #7CE3E1;
+}
+
+.vertical_border{
+    margin: 0 5px;
+    width: 2px;
+    height: 26px;
+    background: #7CE3E1;
+}
+/*.header__rightside .active{*/
+/*    border-left-style: solid;*/
+/*    border-left-width: 2px;*/
+/*    border-left-color: #7CE3E1;*/
+/*}*/
+
+.header_link {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.header__rightside-block .active {
+    color: #000;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.14px;
+    text-decoration: none;
+    opacity: 1.0;
+}
+
 /* Header styles end */
 
 /* First block Intro styles start */
