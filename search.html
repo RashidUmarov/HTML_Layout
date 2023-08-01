@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сервис по поиску публикаций о компании по его ИНН</title>
+    <!--  перезагрузка дефолтных стилей  <link rel="stylesheet" href="./css/reset.css">-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <img src="./img/svg/logo.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+                </a>
+            </div>
+
+            <!-- центральное меню -->
+            <nav class="header__nav-menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">Тарифы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="" class="header__link">FAQ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- блок информации по компаниям -->
+            <div class="header__account_info">
+                <p><span class="small">Использовано компаний </span><span class="value-bold">34</span></p>
+                <p><span class="small">Лимит по компаниям </span><span class="value-green">100</span></p>
+            </div>
+
+            <!-- блок профиля -->
+            <div class="header__account">
+                <div class="header__account_leftside">
+                    <div class="header__account-name">Алексей А.</div>
+                    <div class="right"><a href="" class="header__logout">Выйти</a></div>
+                </div>
+                <div class="header__account_photo"><img src="./img/png/photo.png"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search__header">
+        <div class="search__header_left">
+            <div class="search__header_title">
+                Найдите необходимые данные в пару кликов.
+            </div>
+            <div class="search__header_desc">Задайте параметры поиска.<br>
+                Чем больше заполните, тем точнее поиск
+            </div>
+        </div>
+
+        <div class="search__header_right"><img src="img/svg/folders.svg" alt="" class="header__search_picture"></div>
+    </div>
+
+
+</div> <!-- wrapper-->
+
+
+<section class="search__main">
+    <!--  Search form-->
+    <div class="seacrh_input">
+        <div class="search__block_top">
+            <div class="search__block_left">
+                <form id="search_form">
+                    <div class="left__searchform-group">
+                        <p class="leaft__search_control_title">ИНН компании*</p>
+                        <input class="left__search_control" type="text" name="inn" id="inn"
+                               placeholder="10 цифр" required>
+                    </div>
+                    <div class="left__searchform-group">
+                        <p class="leaft__search_control_title">Тональность*</p>
+                        <input class="left__search_control" type="text" name="tone" id="tone">
+                    </div>
+                    <div class="left__searchform-group">
+                        <p class="leaft__search_control_title">Количество документов в выдаче*</p>
+                        <input class="left__search_control" type="text" name="quantity" id="quantity"
+                               placeholder="От 1 до 1000" required>
+                    </div>
+                </form>
+            </div>
+            <div class="search__block_right">
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="maxfull" name="maxfull"
+                           checked="checked">
+                    <label class="choice_lable" for="maxfull">Признак максимальной полноты</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="context" name="context"
+                           checked="checked">
+                    <label class="choice_lable" for="context">Упоминания в бизнес-контексте</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="role" name="role"
+                           checked="checked">
+                    <label class="choice_lable" for="role">Главная роль в публикации</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="risk" name="risk">
+                    <label class="choice_lable" for="risk">Публикации только с риск-факторами</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="news" name="news">
+                    <label class="choice_lable" for="news">Включать технические новости рынков</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="calendar" name="calendar"
+                           checked="checked">
+                    <label class="choice_lable" for="calendar">Включать анонсы и календари</label>
+                </div>
+
+                <div class="choice_container">
+                    <input class="custom-checkbox" form="search_form" type="checkbox" id="summary" name="summary">
+                    <label class="choice_lable" for="summary">Включать сводки новостей</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="search__block_bottom">
+
+        </div>
+    </div>
+    <!--  Search form-->
+    <div class="search_rocket">
+        <img src="img/svg/rocket_man.svg" alt="">
+    </div>
+</section>
+
+
+<!-- подвал -->
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="./img/svg/logo_footer.svg" alt="Сервис по поиску публикаций о компании по его ИНН">
+    </div>
+
+    <div class="footer_textblock">
+        <div class="footer_contacts">
+            <span class="text_right"> г. Москва, Цветной б-р, 40</span><br>
+            <span class="text_right"> +7 495 771 21 11</span><br>
+            <span class="text_right"> info@skan.ru</span>
+        </div>
+        <div class="copyright">
+            Copyright. 2022
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
