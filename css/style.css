@@ -692,6 +692,11 @@ body {
     letter-spacing: 0.22px;
 }
 
+.btn_search_link {
+    text-decoration: none;
+    color: white;
+}
+
 .intro .image {
     margin-top: 27px;
     height: 100%;
@@ -1442,7 +1447,7 @@ body {
 .search__block_top {
     display: flex;
     height: 343px;
-
+    margin-bottom: 40px;
     /*background-color: #b3d4fc;*/
 }
 
@@ -1463,7 +1468,7 @@ body {
     /*background-color: wheat;*/
 }
 
-.search__block_right .choice_container:first-child{
+.search__block_right .choice_container:first-child {
     margin-top: 36px;
 }
 
@@ -1474,7 +1479,7 @@ body {
     margin-left: 44px;
 }
 
-.leaft__search_control_title {
+.left__search_control_title {
     margin-bottom: 20px;
     width: 340px;
     color: #000;
@@ -1496,7 +1501,7 @@ body {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
-.choice_container{
+.choice_container {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -1507,7 +1512,8 @@ body {
     z-index: -1;
     opacity: 0;
 }
-.choice_lable{
+
+.choice_lable {
     display: flex;
     align-items: center;
 }
@@ -1547,10 +1553,107 @@ body {
 .choice_container input:checked ~ .choice_lable {
     opacity: 1;
 }
+
 .search_rocket {
     flex-shrink: 1;
     padding-left: 80px;
     padding-top: 66px;
+}
+
+.search__block_bottom {
+    display: flex;
+    align-content: space-between;
+    /*background-color: #8AC540;*/
+}
+
+.search_bottom__left {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+}
+
+.left__bottomform-group{
+    margin-left: 44px;
+}
+
+.data_select_title {
+    align-self: flex-start;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.54px;
+}
+
+.select_date {
+    display: inline-flex;
+    align-content: space-between;
+    margin-bottom: 75px;
+}
+
+/*input[type="time"]::-webkit-calendar-picker-indicator {*/
+/*     display: none;*/
+/*}*/
+
+/*input[type="time"]::-webkit-calendar-picker-indicator {*/
+/*    background: url(../img/svg/date_triangle.svg) no-repeat;*/
+/*}*/
+
+.search_bottom_date {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 176px;
+    height: 43px;
+    flex-shrink: 0;
+
+    border-radius: 5px;
+    border: 1px solid #C7C7C7;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.search_bottom__right {
+    display: block;
+    margin-left: 30px;
+    /*background-color: #029491;*/
+}
+
+.search_bottom_btn {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 305px;
+    height: 59px;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.66px;
+
+    border-radius: 5px;
+    background: #acb8ff;
+    border: none;
+
+    margin-bottom: 10px;
+}
+
+.search_bottom_btn:hover {
+    background: #5970FF;
+}
+
+.search_bottom_note {
+    margin-left: 50px;
+    color: #949494;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.42px;
 }
 
 /* Search page styles end */

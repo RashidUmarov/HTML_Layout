@@ -75,16 +75,16 @@
             <div class="search__block_left">
                 <form id="search_form">
                     <div class="left__searchform-group">
-                        <p class="leaft__search_control_title">ИНН компании*</p>
+                        <p class="left__search_control_title">ИНН компании*</p>
                         <input class="left__search_control" type="text" name="inn" id="inn"
                                placeholder="10 цифр" required>
                     </div>
                     <div class="left__searchform-group">
-                        <p class="leaft__search_control_title">Тональность*</p>
+                        <p class="left__search_control_title">Тональность*</p>
                         <input class="left__search_control" type="text" name="tone" id="tone">
                     </div>
                     <div class="left__searchform-group">
-                        <p class="leaft__search_control_title">Количество документов в выдаче*</p>
+                        <p class="left__search_control_title">Количество документов в выдаче*</p>
                         <input class="left__search_control" type="text" name="quantity" id="quantity"
                                placeholder="От 1 до 1000" required>
                     </div>
@@ -132,8 +132,30 @@
 
             </div>
         </div>
+        <!-- нижний блок поиска включает в себя поля даты и кнопку Поиск -->
         <div class="search__block_bottom">
+            <div class="search_bottom__left">
+                <div class="left__bottomform-group">
+                    <p class="data_select_title">Диапазон поиска*</p>
+                    <div class="select_date">
+                        <input form="search_form" class="search_bottom_date" type="text" name="from" id="from"
+                               placeholder="Дата начала" required onfocus="(this.type='date')"
+                               onblur="(this.type='text')">
+                        <input form="search_form" class="search_bottom_date" type="text" name="from" id="to"
+                               placeholder="Дата конца" required onfocus="(this.type='date')"
+                               onblur="(this.type='text')">
+                    </div>
 
+                </div>
+            </div>
+
+            <div class="search_bottom__right">
+                <button class="search_bottom_btn">
+                    <a href="results" class="btn_search_link">Поиск</a>
+                </button>
+                <div class="search_bottom_note">* Обязательные к заполнению поля</div>
+
+            </div>
         </div>
     </div>
     <!--  Search form-->
