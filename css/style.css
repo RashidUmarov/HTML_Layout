@@ -1759,13 +1759,101 @@ body {
 }
 
 .results_carusel {
-    display: block;
+    display: flex;
+    align-items: center;
     height: 158px;
     width: 100%;
     margin-bottom: 107px;
 
-    background-color: #5970FF;
+    /*background-color: #5970FF;*/
 }
+
+.summary_arrow {
+    cursor: pointer;
+}
+
+.summary_window {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-shrink: 1;
+    flex-grow: 1.0;
+    height: 100%;
+    max-width: 1260px;
+    border-radius: 10px;
+    border: 2px solid #029491;
+    background: #FFF;
+    sss
+
+    background-color: #FFB64F;
+}
+
+.summary_start_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 133px;
+    height: 158px;
+    flex-shrink: 0;
+
+    border-radius: 10px 0px 0px 10px;
+    background: #029491;
+}
+
+.summary_name {
+    width: 78px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.4px;
+}
+
+.summary_data_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 133px;
+    height: 158px;
+    flex-shrink: 0;
+
+    border-radius: 10px 0px 0px 10px;
+    background: #fff;
+}
+.summary__block_wrapper{
+    display: flex;
+    align-items: center;
+    /*background-color: #FFB64F;*/
+}
+
+.summary__block_wrapper:after {
+    content: '';
+    height: 124px;
+    border-right-style: solid;
+    border-right-color: #949494;
+    border-right-width: 2px;
+    opacity: 0.4;
+}
+
+.summary_value {
+    text-align: center;
+    width: 100%;
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+
 
 .documents {
     width: 100%;
@@ -1786,9 +1874,9 @@ body {
 .documents_block {
     display: flex;
     flex-wrap: wrap;
-    height: 694px;
+    /*height: 694px;*/
 
-    margin-bottom: 38px;
+    /*margin-bottom: 38px;*/
 }
 
 .post_card {
@@ -1801,9 +1889,10 @@ body {
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20);
+    margin-bottom: 38px;
 }
 
-.documents_block .post_card:first-child {
+.documents_block .post_card:nth-child(odd) {
     margin-right: 38px;
 }
 
